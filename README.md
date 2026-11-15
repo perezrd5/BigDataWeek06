@@ -21,7 +21,7 @@ physical machine. The controlled HTTP replay published 122 Kafka messages and
 produced 120 unique output rows. Restarting from the same checkpoint preserved
 the 120-row count.
 
-- [Executed notebook](alaska_integration.executed.ipynb) contains the code and
+- [Executed notebook](DDS8530_Perez_Assignment06.ipynb) contains the code and
   outputs from the successful run.
 - [Run evidence](lab_results/evidence.json) records stage completion, data
   quality, entity-resolution scores, runtime comparisons, Spark worker
