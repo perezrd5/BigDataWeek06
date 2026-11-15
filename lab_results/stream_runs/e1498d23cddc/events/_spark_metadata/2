@@ -1,0 +1,5 @@
+v1
+{"path":"file:///workspace/lab_results/stream_runs/e1498d23cddc/events/part-00000-63378a2a-4f13-43fb-bf66-e3fc8670288a-c000.snappy.parquet","size":2431,"isDir":false,"modificationTime":1794706271373,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///workspace/lab_results/stream_runs/e1498d23cddc/events/part-00001-8470a3eb-96df-4932-a1b4-df9ad7cfee6d-c000.snappy.parquet","size":2520,"isDir":false,"modificationTime":1794706271406,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///workspace/lab_results/stream_runs/e1498d23cddc/events/part-00002-d7bd85a1-1729-47fe-9b8e-777711e1e866-c000.snappy.parquet","size":2416,"isDir":false,"modificationTime":1794706271610,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///workspace/lab_results/stream_runs/e1498d23cddc/events/part-00003-cd11583d-cb9b-408b-a54f-bd884927f6ce-c000.snappy.parquet","size":2314,"isDir":false,"modificationTime":1794706271607,"blockReplication":1,"blockSize":33554432,"action":"add"}

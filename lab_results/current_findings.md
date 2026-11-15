@@ -49,13 +49,13 @@
     "physical_multi_node": false,
     "workers": [
       {
-        "id": "worker-20261115002730-172.18.0.5-34873",
-        "host": "172.18.0.5",
+        "id": "worker-20261115012434-172.19.0.6-35521",
+        "host": "172.19.0.6",
         "cores": 1
       },
       {
-        "id": "worker-20261115002730-172.18.0.6-39415",
-        "host": "172.18.0.6",
+        "id": "worker-20261115012434-172.19.0.5-44841",
+        "host": "172.19.0.5",
         "cores": 1
       }
     ],
@@ -73,18 +73,18 @@
   },
   "streaming": {
     "mode": "controlled HTTP replay of static Alaska records",
-    "topic": "alaska-022dc132c51f",
+    "topic": "alaska-8a34f24f417e",
     "published": 122,
     "expected_valid_unique": 120,
     "output_rows": 120,
     "restart_preserved_count": true,
-    "elapsed_seconds": 28.333469627
+    "elapsed_seconds": 21.396065730999908
   },
   "timing_medians": {
-    "Dask": 0.299006898000016,
-    "Pandas": 0.07197139900000593,
-    "Spark DataFrame": 0.9715500260000454,
-    "Spark RDD": 0.9403522599999405
+    "Dask": 0.21960549600044033,
+    "Pandas": 0.04936609900050826,
+    "Spark DataFrame": 0.9625731250007448,
+    "Spark RDD": 0.5150642580001659
   }
 }
 ```

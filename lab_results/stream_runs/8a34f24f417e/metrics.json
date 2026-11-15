@@ -1,0 +1,716 @@
+{
+  "mode": "controlled HTTP replay of static Alaska records",
+  "topic": "alaska-8a34f24f417e",
+  "published": 122,
+  "expected_valid_unique": 120,
+  "output_rows": 120,
+  "restart_preserved_count": true,
+  "elapsed_seconds": 21.396065730999908,
+  "progress": [
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:33.462Z",
+      "batchId": 0,
+      "numInputRows": 41,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 6.891914607497059,
+      "durationMs": {
+        "addBatch": 4504,
+        "commitOffsets": 262,
+        "getBatch": 73,
+        "latestOffset": 675,
+        "queryPlanning": 131,
+        "triggerExecution": 5947,
+        "walCommit": 259
+      },
+      "eventTime": {
+        "avg": "2026-11-15T02:12:32.381Z",
+        "max": "2026-11-15T02:12:32.381Z",
+        "min": "2026-11-15T02:12:32.381Z",
+        "watermark": "1970-01-01T00:00:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 40,
+          "numRowsUpdated": 40,
+          "allUpdatesTimeMs": 903,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 2,
+          "commitTimeMs": 640,
+          "memoryUsedBytes": 9024,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 1,
+            "stateOnCurrentVersionSizeBytes": 8448
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": null,
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "numInputRows": 41,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 6.891914607497059,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    },
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:39.428Z",
+      "batchId": 1,
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 1400,
+        "commitOffsets": 251,
+        "getBatch": 0,
+        "latestOffset": 8,
+        "queryPlanning": 25,
+        "triggerExecution": 1920,
+        "walCommit": 229
+      },
+      "eventTime": {
+        "watermark": "2026-11-15T02:02:32.381Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 40,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 181,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 710,
+          "memoryUsedBytes": 11776,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 4,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 8896
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    },
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:33.462Z",
+      "batchId": 0,
+      "numInputRows": 41,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 6.891914607497059,
+      "durationMs": {
+        "addBatch": 4504,
+        "commitOffsets": 262,
+        "getBatch": 73,
+        "latestOffset": 675,
+        "queryPlanning": 131,
+        "triggerExecution": 5947,
+        "walCommit": 259
+      },
+      "eventTime": {
+        "avg": "2026-11-15T02:12:32.381Z",
+        "max": "2026-11-15T02:12:32.381Z",
+        "min": "2026-11-15T02:12:32.381Z",
+        "watermark": "1970-01-01T00:00:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 40,
+          "numRowsUpdated": 40,
+          "allUpdatesTimeMs": 903,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 2,
+          "commitTimeMs": 640,
+          "memoryUsedBytes": 9024,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 1,
+            "stateOnCurrentVersionSizeBytes": 8448
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": null,
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "numInputRows": 41,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 6.891914607497059,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    },
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:39.428Z",
+      "batchId": 1,
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 1400,
+        "commitOffsets": 251,
+        "getBatch": 0,
+        "latestOffset": 8,
+        "queryPlanning": 25,
+        "triggerExecution": 1920,
+        "walCommit": 229
+      },
+      "eventTime": {
+        "watermark": "2026-11-15T02:02:32.381Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 40,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 181,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 710,
+          "memoryUsedBytes": 11776,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 4,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 8896
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    },
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:42.000Z",
+      "batchId": 2,
+      "numInputRows": 40,
+      "inputRowsPerSecond": 61.443932411674346,
+      "processedRowsPerSecond": 19.074868860276585,
+      "durationMs": {
+        "addBatch": 1620,
+        "commitOffsets": 190,
+        "getBatch": 0,
+        "latestOffset": 6,
+        "queryPlanning": 42,
+        "triggerExecution": 2097,
+        "walCommit": 235
+      },
+      "eventTime": {
+        "avg": "2026-11-15T02:12:32.381Z",
+        "max": "2026-11-15T02:12:32.381Z",
+        "min": "2026-11-15T02:12:32.381Z",
+        "watermark": "2026-11-15T02:02:32.381Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 80,
+          "numRowsUpdated": 40,
+          "allUpdatesTimeMs": 271,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 394,
+          "memoryUsedBytes": 19904,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 16576
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 39,
+              "0": 42
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 39,
+              "0": 42
+            }
+          },
+          "numInputRows": 40,
+          "inputRowsPerSecond": 61.443932411674346,
+          "processedRowsPerSecond": 19.074868860276585,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    },
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:33.462Z",
+      "batchId": 0,
+      "numInputRows": 41,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 6.891914607497059,
+      "durationMs": {
+        "addBatch": 4504,
+        "commitOffsets": 262,
+        "getBatch": 73,
+        "latestOffset": 675,
+        "queryPlanning": 131,
+        "triggerExecution": 5947,
+        "walCommit": 259
+      },
+      "eventTime": {
+        "avg": "2026-11-15T02:12:32.381Z",
+        "max": "2026-11-15T02:12:32.381Z",
+        "min": "2026-11-15T02:12:32.381Z",
+        "watermark": "1970-01-01T00:00:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 40,
+          "numRowsUpdated": 40,
+          "allUpdatesTimeMs": 903,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 2,
+          "commitTimeMs": 640,
+          "memoryUsedBytes": 9024,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 1,
+            "stateOnCurrentVersionSizeBytes": 8448
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": null,
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "numInputRows": 41,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 6.891914607497059,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    },
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:39.428Z",
+      "batchId": 1,
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 1400,
+        "commitOffsets": 251,
+        "getBatch": 0,
+        "latestOffset": 8,
+        "queryPlanning": 25,
+        "triggerExecution": 1920,
+        "walCommit": 229
+      },
+      "eventTime": {
+        "watermark": "2026-11-15T02:02:32.381Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 40,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 181,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 710,
+          "memoryUsedBytes": 11776,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 4,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 8896
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    },
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:42.000Z",
+      "batchId": 2,
+      "numInputRows": 40,
+      "inputRowsPerSecond": 61.443932411674346,
+      "processedRowsPerSecond": 19.074868860276585,
+      "durationMs": {
+        "addBatch": 1620,
+        "commitOffsets": 190,
+        "getBatch": 0,
+        "latestOffset": 6,
+        "queryPlanning": 42,
+        "triggerExecution": 2097,
+        "walCommit": 235
+      },
+      "eventTime": {
+        "avg": "2026-11-15T02:12:32.381Z",
+        "max": "2026-11-15T02:12:32.381Z",
+        "min": "2026-11-15T02:12:32.381Z",
+        "watermark": "2026-11-15T02:02:32.381Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 80,
+          "numRowsUpdated": 40,
+          "allUpdatesTimeMs": 271,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 394,
+          "memoryUsedBytes": 19904,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 16576
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 19,
+              "0": 22
+            }
+          },
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 39,
+              "0": 42
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 39,
+              "0": 42
+            }
+          },
+          "numInputRows": 40,
+          "inputRowsPerSecond": 61.443932411674346,
+          "processedRowsPerSecond": 19.074868860276585,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    },
+    {
+      "id": "05883857-c175-432e-95a4-7b9ec8c52d34",
+      "runId": "21640bee-4d06-4fad-95bd-650244145131",
+      "name": null,
+      "timestamp": "2026-11-15T02:12:46.000Z",
+      "batchId": 3,
+      "numInputRows": 41,
+      "inputRowsPerSecond": 21.567596002104157,
+      "processedRowsPerSecond": 17.91958041958042,
+      "durationMs": {
+        "addBatch": 1715,
+        "commitOffsets": 331,
+        "getBatch": 0,
+        "latestOffset": 5,
+        "queryPlanning": 36,
+        "triggerExecution": 2288,
+        "walCommit": 199
+      },
+      "eventTime": {
+        "avg": "2026-11-15T02:12:32.381Z",
+        "max": "2026-11-15T02:12:32.381Z",
+        "min": "2026-11-15T02:12:32.381Z",
+        "watermark": "2026-11-15T02:02:32.381Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupeWithinWatermark",
+          "numRowsTotal": 120,
+          "numRowsUpdated": 40,
+          "allUpdatesTimeMs": 271,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 410,
+          "memoryUsedBytes": 29376,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 12,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 24768
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[alaska-8a34f24f417e]]",
+          "startOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 39,
+              "0": 42
+            }
+          },
+          "endOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 58,
+              "0": 64
+            }
+          },
+          "latestOffset": {
+            "alaska-8a34f24f417e": {
+              "1": 58,
+              "0": 64
+            }
+          },
+          "numInputRows": 41,
+          "inputRowsPerSecond": 21.567596002104157,
+          "processedRowsPerSecond": 17.91958041958042,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ],
+      "sink": {
+        "description": "FileSink[/workspace/lab_results/stream_runs/8a34f24f417e/events]",
+        "numOutputRows": -1
+      }
+    }
+  ]
+}
