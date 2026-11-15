@@ -28,7 +28,7 @@ the 120-row count.
   execution, and streaming results.
 - [Source notebook](alaska_integration.ipynb) is the notebook used to rerun
   the lab.
-- The final report, `DDS8530_Perez_Alaska_Lab_Report.docx`, is submitted
+- The final report, `DDS8530_Perez_Alaska_Lab_Report.pdf`, is submitted
   separately with the executed notebook. It includes the measured results
   from the completed run.
 - `alaska_report.pdf`, `alaska_lab.zip`, and `baseline_submission/` contain
