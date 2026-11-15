@@ -1,0 +1,10 @@
+.venv
+.git
+baseline_submission
+qa_results
+lab_data
+lab_results
+*.zip
+*.pdf
+*.docx
+__pycache__

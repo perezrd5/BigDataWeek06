@@ -1,0 +1,92 @@
+# Findings from the completed run
+
+```json
+{
+  "quality": {
+    "records": 16662,
+    "sources": 26,
+    "missing_brand": 8944,
+    "missing_model": 813,
+    "missing_screen": 8671,
+    "conflicting_records": 152
+  },
+  "entity_resolution": {
+    "excluded_multi_entity_ids": 9,
+    "labeled_records": 2264,
+    "true_pairs": 9148,
+    "predicted_pairs": 672,
+    "tp": 667,
+    "fp": 5,
+    "fn": 8481,
+    "precision": 0.9925595238095238,
+    "recall": 0.07291211193703542,
+    "f1": 0.1358452138492872
+  },
+  "schema_coverage": {
+    "labeled_attributes": 1344,
+    "mapped_attributes": 25
+  },
+  "status": {
+    "pandas": "completed",
+    "dask": "completed",
+    "sql": "completed",
+    "spark": "completed",
+    "mongo": "completed",
+    "kafka": "completed HTTP replay, Kafka, streaming, and checkpoint restart"
+  },
+  "versions": {
+    "pandas": "2.2.3",
+    "dask": "2025.2.0",
+    "sqlalchemy": "2.0.39",
+    "matplotlib": "3.10.0",
+    "seaborn": "0.13.2"
+  },
+  "archive_sha256": {
+    "monitor.tar.gz": "9084b8998d5afa283865dfcf8e1f3cc4137f6befbe431903a4d83df4b3f7b45d"
+  },
+  "spark_topology": {
+    "master": "spark://spark-master:7077",
+    "physical_multi_node": false,
+    "workers": [
+      {
+        "id": "worker-20261115002730-172.18.0.5-34873",
+        "host": "172.18.0.5",
+        "cores": 1
+      },
+      {
+        "id": "worker-20261115002730-172.18.0.6-39415",
+        "host": "172.18.0.6",
+        "cores": 1
+      }
+    ],
+    "observed_python_hosts": [
+      "spark-worker-1",
+      "spark-worker-2"
+    ]
+  },
+  "deduplication": {
+    "duplicate_probe_removed": 5,
+    "listings": 16662,
+    "entities": 13172,
+    "linked_listings_removed_from_entity_table": 3490,
+    "warning": "Exact-key consolidation is a baseline; low recall and false matches remain."
+  },
+  "streaming": {
+    "mode": "controlled HTTP replay of static Alaska records",
+    "topic": "alaska-022dc132c51f",
+    "published": 122,
+    "expected_valid_unique": 120,
+    "output_rows": 120,
+    "restart_preserved_count": true,
+    "elapsed_seconds": 28.333469627
+  },
+  "timing_medians": {
+    "Dask": 0.299006898000016,
+    "Pandas": 0.07197139900000593,
+    "Spark DataFrame": 0.9715500260000454,
+    "Spark RDD": 0.9403522599999405
+  }
+}
+```
+
+Update the report with these measured values. API events replay actual Alaska titles; they are not a live commercial feed. Spark workers are separate containers on one host, not separate physical machines.

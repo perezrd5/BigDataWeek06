@@ -1,0 +1,13 @@
+pandas==3.1.1
+dask[dataframe]==2026.8.0
+sqlalchemy==2.1.8
+matplotlib==3.11.2
+seaborn==0.13.2
+requests==2.34.2
+pymongo==4.19.0
+kafka-python==3.0.13
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.4.0
+jupyterlab
+# Optional: pyspark==3.5.7 (requires Java 17)
